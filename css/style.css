@@ -46,7 +46,8 @@ ul
     min-height: 100vh;
     display: block;
     
-    padding: 0 30px;
+    padding: 0 80px; 
+    /* 30 */
    
     opacity: 1;
     position: fixed;
@@ -168,7 +169,7 @@ ul
 
 .aside
 {
-    width: 270px;
+    width: 250px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
@@ -327,19 +328,21 @@ ul
 } 
 h3.hello
 {
-    font-size: 28px;
+    font-size: 24px;
+    /* 28 font */
     margin: 15px 0;
 }
 h3.hello span
 {
     font-family: 'clicker script', cursive;
-    font-size: 40px;
+    font-size: 30px;
+    /* 40 font */
     font-weight: 700;
     color: var(--skin-color);
 }
 h3.my-profession
 {
-    font-size: 30px;
+    font-size: 24px;
     margin: 15px 0;
 }
 .typing
@@ -349,7 +352,8 @@ h3.my-profession
 }
 .home-info p{
     margin-bottom: 70px;
-    font-size: 25px;
+    font-size: 15px;
+    /* 25 font */
     color: var(--text-black-700);
     font-family: serif;
 }
@@ -790,7 +794,7 @@ h3.my-profession
     .aside .nav-toggler
     {
         display: flex;
-        left: 30px;
+        left: 20px;
     }
     .aside .nav-toggler.open
     {
@@ -802,7 +806,7 @@ h3.my-profession
     }
     .section.open
     {
-        left: 270px;
+        left: 250px;
     }
 
     .about .about-content .personal-info .info-item p span
@@ -810,6 +814,16 @@ h3.my-profession
         display: block;
         margin-left: 0;
     }
+}
+@media (max-width:315px)
+{   
+    .home .home-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: small;
+    }
+    
 }
 @media (max-width:991px)
 {   
